@@ -8,7 +8,7 @@
 
     const sceneInfo = [
         {
-            // 0 좋은 주석
+            // 0 좋은 주석 좋은 주석좋은 주석좋은 주석좋은 주석
             type: 'sticky',
             heightNum: 5, // 브라우저 높이의 5배로 scrollHeight 세팅
             scrollHeight: 0,
