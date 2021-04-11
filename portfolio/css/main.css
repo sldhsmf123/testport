@@ -1,0 +1,557 @@
+@charset "utf-8";
+
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:14px;
+}
+
+body{
+    overflow-x: hidden;
+    color:#333333;
+    letter-spacing:-0.05em;
+
+}
+a{
+    text-decoration:none;
+    color:#333333;
+}
+
+p{
+    line-height:1.6;
+}
+
+h3{font-size: 4rem;
+ text-align:center;}
+
+.btn {
+    width: 7vw;
+    padding: 10px;
+    border : 2px solid #333;
+    border-radius: 5%;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    box-sizing:border-box;
+    display:block;
+    transition:.4s;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color:#fff;
+     }
+
+
+/* INTRO */
+.global-nav{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:49px;
+    padding: 7rem 1rem 0 1rem;
+    z-index:10;
+    font-size : 2rem;
+}
+
+.global-nav-links,
+.local-nav-links{
+    height:100% ;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    font-weight: bold;
+}
+
+.global-nav-links{
+    justify-content:space-between;
+    width:1200px;
+}
+.local-nav{
+    position:absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height:150px;
+    border-bottom:1px solid #ddd;
+    padding:0 1rem;
+    z-index: 11;
+}
+
+
+.local-nav-sticky .local-nav{
+  position:fixed;
+  top:0;
+  background: rgba(255, 255, 255, 0.1);
+  /* for iPhone */
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
+	-moz-backdrop-filter: saturate(180%) blur(15px);
+	-o-backdrop-filter: saturate(180%) blur(15px);
+    backdrop-filter: saturate(180%) blur(15px);  
+}
+.local-nav-links a:not(.logo){
+    margin-left:2em;
+ 
+    
+}
+.logo{
+    /* transform: translateY(-1vh); */
+    margin-right:auto;
+    width:100%;
+}
+
+.scroll-section{
+    padding-top:50vh;
+  
+}
+
+#scroll-section-0 h1{
+    position: relative;
+    top: -10vh;
+    z-index:5;
+    font-size:4rem;
+    text-align: center;
+    color:#333;
+}
+
+
+.main-message{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    top:50vh;
+    height: 3em;
+    font-size:2.5rem;
+    margin: 5px 0px;
+    opacity:0;
+}
+
+.main-message p{
+    font-weight: bold;
+    line-height: 1.2;
+    text-align:center;
+    color:#fff;
+
+    }
+
+
+/* PROFILE */
+
+
+.inner .square h2{
+    font-size:4rem;
+    color:#333333;
+    transform:translate(-13vw, -15vh);
+
+    
+} 
+.inner .square .description{
+    font-size: 3rem;
+    color:#333333;
+    padding:0 1rem;
+    width:40vw;
+    margin:0 auto;
+    transform:translateY(-10vh);
+    font-weight: bold;
+    text-align: left;
+}
+.inner .square .description2{
+    font-size: 2.5rem;
+    color:#333333;
+    padding:0 1rem;
+    width:40vw;
+    margin:0 auto;
+    transform:translateY(-6vh);
+    font-weight: bold;
+    text-align: left;  
+}
+
+
+
+
+
+
+#scroll-section-1 h3{display:none;}
+
+#scroll-section-1 .inner{
+    position: relative;
+}
+ 
+#scroll-section-1 .floating1 {
+    height:50vh;
+    position: absolute;
+    top:0vh;
+    left: 18vw;
+    box-shadow: 10px 3px 3px rgba(255, 255, 255, 0.1);
+    z-index:10;
+}
+ 
+#scroll-section-1 .floating2{
+   position: absolute;
+   top:20vh;
+   left:15vw;
+   width:70%;
+ } 
+
+/* hover 시 색상이 변하는 라운드; */
+.square {
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top:0vh;
+    left:40vw;
+  }
+  
+  .square span {
+    position: absolute;
+    width: 80%;
+    height:80%;
+    border: 1px solid #ccc;
+    border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+    /* border-radius에 /를 이용하여 2가지를 %를 입력하면 창의적으로 찌그러진 원 만들 수 있음  */
+    /* 가로40%,  세로 60%를 해서 찌그러진 원 만듬 */
+    transition: 0.5s;
+    /* 마우스가 올라갔을 때  배경색이 변경되는 이벤트에 딜레이를 줌 */
+    /* animation: circle 5s linear infinite; */
+  }
+  
+  .square:hover span {
+    border: none;
+  }
+  
+  .square span:nth-child(1) {
+    animation: circle 6s linear infinite;
+  }
+  .square span:nth-child(2) {
+    animation: circle 4s linear infinite;
+    animation-direction: reverse;
+    /* 애니메이션 방향을 반대로 */
+  }
+  .square span:nth-child(3) {
+    animation: circle 20s linear infinite;
+  }
+  
+  .square:hover span:nth-child(1) {
+    opacity: 0.3;
+    background-color: #033333;
+  }
+  .square:hover span:nth-child(2) {
+    opacity: 0.6;
+    background-color: #fafafa;
+  }
+  .square:hover span:nth-child(3) {
+    opacity: 0.9;
+    background-color: rgb(187, 218, 228);
+  }
+  
+  @keyframes circle {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .square div {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .square div a {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+    padding: 8px;
+    text-decoration: none;
+  }
+  
+  #scroll-section-1 #progress {
+    padding-bottom: 20vw;
+  } 
+
+  #scroll-section-1 #progress h4{
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    transform: translateX(-18vw);
+
+  }
+  /* progress bar */
+  #scroll-section-1 #progress{
+    transform: translateY(70vh);
+
+  }
+  #scroll-section-1 #progress .bar{
+    width:50%; height:3rem;
+    margin: 0 auto 2rem; 
+    background-color:#eee; 
+    position:relative;
+    box-sizing:border-box;
+    display: block;
+  }
+ 
+    #scroll-section-1 #progress .bar .fill{
+    width: 100%; 
+    height: 100%; 
+    background-color:#333;
+    position: absolute; 
+    left: 0; top:0;
+    box-sizing: border-box;
+    padding:0px 2rem 0px 0px;
+  }
+  #scroll-section-1 #progress .bar .fill .tag{
+    width:auto; height:100%; 
+    padding:.5rem 2rem; 
+    box-sizing: border-box; 
+    position:absolute; 
+    left:0; top:0; 
+    line-height:1; 
+    color:#FFF; 
+    font-size:2.5rem;
+    font-weight: bold;
+    text-align:center;
+  }
+  #scroll-section-1 #progress .bar span{
+    display:block; 
+    background-color:#EEE; 
+    position:absolute; 
+    right:0; 
+    text-align:right; 
+    color:#333; 
+    line-height:1; 
+    font-size:2rem;
+    font-weight: bold;
+    padding:8px 25px 6px 0px; 
+    box-sizing:border-box;
+    z-index:10;
+  }
+  #scroll-section-1 #progress .bar .hidden_bar{
+    width:100%; height:100%; 
+    background-color:#EEE; 
+    position:absolute; 
+    top:0;
+    right:0; 
+  }
+
+
+
+/* .canvas-caption{
+    padding:0.1rem;
+    color:#888;
+    font-size:1.2rem;
+    max-width:1000px;
+    margin:0 auto;
+
+} */
+
+
+.sticky-elem{
+    display:none;
+    position:fixed;
+    left: 0;
+    width: 100%;
+    color:#fff;
+}
+
+
+#show-scene-0 #scroll-section-0 .sticky-elem
+/* #show-scene-2 #scroll-section-2 .sticky-elem */{
+    display:block;
+} 
+
+.sticky-elem-canvas {
+  top:0;
+  height: 100%;
+
+}
+
+
+.sticky-elem-canvas canvas {
+    position: absolute;
+  	top: 50%;
+    left: 50%;
+}
+
+
+#scroll-section-2 h3{
+  padding: 10% 0 2%;
+}
+
+/* swiper
+.swiper-container {
+    width: 80%;
+    height: 100%;
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #eee;
+
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  } */ 
+
+  .swiper-button-next,
+  .swiper-button-prev {
+
+  }
+
+/* MOCKUP */
+
+#scroll-section-3 h3{
+  margin-top:40vh;
+  text-align: center;}
+
+
+
+
+
+
+  /* medal */
+
+  #scroll-section-4 {
+      background-image:url('../imgs/main01.jpg');
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 40%;
+    }
+  #scroll-section-4 .inner{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #scroll-section-4 .medal{
+    width: 700px;
+    height: 700px;
+    perspective: 600px;
+    cursor:pointer;
+    transform: translateX(15vw) translateY(-10vh);
+    z-index: 10;
+  }  
+
+#scroll-section-4 .medal .front,
+#scroll-section-4 .medal .back{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    backface-visibility: hidden;
+    transition:1s;
+}
+
+#scroll-section-4 .medal .front{
+    position: absolute;
+    transform: rotateY(0deg);
+}
+
+#scroll-section-4 .medal:hover .front{
+    transform: rotateY(180deg);
+
+}
+
+#scroll-section-4 .medal .back{
+    transform: rotateY(-180deg);
+}
+
+#scroll-section-4 .medal:hover .back{
+     transform: rotateY(0deg);
+
+}
+
+#scroll-section-4 .medal .back .btn{
+    position: absolute;
+    top:300px;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width:250px;
+    margin-top:150px;
+}
+
+#scroll-section-4 .contact{
+  width: 30vw;
+  height: 50vh;
+  border: 1px solid #ddd;
+  border-radius: 10%;
+  line-height: 3;
+  transform: translateX(15vw) translateY(-10vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+#scroll-section-4 .contact h3{
+  font-size:4rem;
+}
+#scroll-section-4 .contact #name{
+  font-weight: bold;
+  line-height: 3;
+}
+
+#scroll-section-4 .contact .material-icons{
+  font-size: 3rem;
+  padding: 2%;
+
+}
+
+#scroll-section-4 .contact svg{
+transform:  translateX(3vw) translateY(18vh);
+}
+
+.footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:7rem;
+  background-color:#333333;
+  color:#fff;
+  font-size:1.5rem;
+}
+
+@media (min-width:1024px) {
+    #scroll-section-0 h1{
+        font-size: 9vw;
+    }    
+    .main-message{
+        font-size: 4vw;
+    }
+    
+    .description{
+        font-size:2rem;
+    }
+    
+    .description h3{
+        font-size:6rem;
+    }
+    
+   
+    .canvas-caption{
+        font-size:2rem;
+    }
+}
+

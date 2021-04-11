@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KangYeahEun - Portfolio</title>
+
+a
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KangYeahEun" />
+    <meta property="og:title" content="KangYeahEun - Portfolie" />
+    <meta property="og:description" content="강예은의 포트폴리오 페이지 입니다." />
+    <meta property="og:image" content="./imgs/logo01.png" />
+    <meta property="og:url" content="https://kangyeaheun.dothome.co.kr/portfolie" />
+    <!-- favicon -->
+    <link rel="icon" href="./favicon.png">
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- 초기화 -->
+    <link href="./css/default.css" rel="stylesheet" type="text/css">
+    <!-- main css -->
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <!-- prefixfree -->
+    <script src="script/prefixfree.min.js"></script>
+    <!-- 제이쿼리 스크립트  -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <nav class="global-nav">
+            <div class="global-nav-links">
+                <a href="#" class="global-nav-item">PROFILE</a>
+                <a href="#" class="global-nav-item">PROJECT</a>
+                <a href="#" class="global-nav-item">DESIGN</a>
+                <a href="#" class="global-nav-item">CONTACT</a>
+                <a href="#" class="global-nav-item">RESUME</a>
+
+            </div>
+        </nav>
+
+        <nav class="local-nav">
+            <div class="local-nav-links">
+                <a href="index.html" class="logo"><img src="./imgs/logo-01.png" alt="상단로고" /></a>
+                <!-- <a href="#">KO</a>
+                    <a href="#">EN</a>
+                 -->
+
+        </nav>
+
+        <!-- MAIN -->
+        <!-- SECTION 0 -->
+        <section class="scroll-section" id="scroll-section-0">
+            <h1>강 예 은</h1>
+            <div class="sticky-elem sticky-elem-canvas">
+                <canvas id="video-canvas-0" width="1920" height="1080"></canvas>
+            </div>
+            <div class="sticky-elem main-message a">
+                <p>온전히 빠져들게하는 든든한 매력</p>
+            </div>
+            <div class="sticky-elem main-message b">
+                <p>동료들을 편안하게 해주는<br>동료 친화모드</p>
+            </div>
+            <div class="sticky-elem main-message c">
+                <p>새롭게 귀사를 찾아온 매혹</p>
+            </div>
+            <div class="sticky-elem main-message d">
+                <p>당신을 매료시킬 창의적 인재</p>
+            </div>
+        </section>
+
+        <!--SECTION 1 -->
+        <section class="scroll-section" id="scroll-section-1">
+            <h3>PROFILE</h3>
+            <!-- <div id="home1-fg">
+                <div id="home1-fg-inner"></div>
+            </div> -->
+            <div class="inner">
+                <img src="./imgs/main_05.png" alt="메인비주얼" class="floating floating1">
+                <img src="./imgs/main_img01.png" alt="서명" class="floating floating2">
+                <div class="square">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                    <div>
+                        <h2>PROFILE</h2>
+                        <p class="description">
+                            강예은<br>
+                            1988.01.19<br>
+                            서울시 강서구 초록마을로28길<br>
+                            kangyeaheun@gmail.com<br>
+                            010-8028-2975</p>
+                        <p class="description2">
+                            백석대학교 기독교실용음악과 졸업(2011.02)<br>
+                            그린컴퓨터아트학원(종로) <br>
+                            반응형 UI&#x0026;UX (웹디자인&#x0026;웹퍼블리셔) 과정 수료<br>
+                            (2020.11.02 ~ 2021.04.08)<br>
+                            웹디자인기능사 자격증 취득(실기) 예정<br>
+
+                        </p>
+
+                    </div>
+                </div>
+                <!-- progerss bar -->
+                <div id="progress">
+                    <h4>PROGRESS</h4>
+                    <div class="bar">
+                        <div class="fill">
+                            <div class="tag">
+                                HTML
+                            </div>
+                        </div>
+                        <div class="hidden_bar" style="width: 10%;"></div>
+                        <span>90%</span>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill">
+                            <div class="tag">
+                                CSS
+                            </div>
+                        </div>
+                        <div class="hidden_bar" style="width: 10%;"></div>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="fill">
+                            <div class="tag">
+                                JS
+                            </div>
+                        </div>
+                        <div class="hidden_bar" style="width: 30%;"></div>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill">
+                            <div class="tag">
+                                JQ
+                            </div>
+                        </div>
+                        <div class="hidden_bar" style="width: 40%;"></div>
+                        <span>60%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="fill">
+                            <div class="tag">
+                                AI
+                            </div>
+                        </div>
+                        <div class="hidden_bar" style="width: 20%;"></div>
+                        <span>80%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="fill">
+                            <div class="tag">
+                                PS
+                            </div>
+                        </div>
+                        <div class="hidden_bar" style="width: 10%;"></div>
+                        <span>90%</span>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- SECTION 2  PROJECT -->
+        <section class="scroll-section" id="scroll-section-2">
+            <h3>PROJECT</h3>
+            <!-- Swiper-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="http://kangyeaheun.dothome.co.kr/monotour/"><img src="./imgs/001/monotour.png" alt="모노투어"></a>모노투어</div>
+                <div class="swiper-slide"><a href="http://kangyeaheun.dothome.co.kr/seamarq"><img src="./imgs/001/seamarq.png" alt="씨마크호텔"></a>씨마크호텔</div>
+                <div class="swiper-slide"><a href="http://kangyeaheun.dothome.co.kr/ptx/intro.html"><img src="./imgs/001/pentatonix.png" alt="펜타토닉스"></a>펜타토닉스</div>
+                <div class="swiper-slide"><a href="#" title="" onclick="window.open('http://kangyeaheun.dothome.co.kr/mycat','','width=500,height=300')";><img src="./imgs/001/mycat.png" alt="마이캣클리닉"></a>마이캣</div>
+                <div class="swiper-slide"><a href="http://kangyeaheun.dothome.co.kr/starbucks"><img src="" alt="스타벅스"></a>스타벅스(클론)</div>
+                <div class="swiper-slide"><a href="http://kangyeaheun.dothome.co.kr/airmug_pro"><img src="" alt="에어머그 프로"></a>에어머그 프로(클론)</div>
+            </div>
+       <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>  
+       <!-- Add Arrows  -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+     </div>     
+        </section>
+
+        <!-- SECTION 3 design -->
+        <section class="scroll-section" id="scroll-section-3">
+            <h3>DESIGN</h3>
+        <img src="./imgs/ptx_mockup.png" alt="목업이미지" class="mockup"> 
+
+        </section>
+
+        <!-- SECTION 4 CONTACT & RESUME  -->
+        <section class="scroll-section" id="scroll-section-4">
+            <div class="inner">
+                <div class="medal">
+                    <div class="front">
+                        <img src="./imgs/medal_front.png" alt="메달">
+                    </div>
+                    <div class="back">
+                        <img src="./imgs/medal_back.png" alt="메달">
+                        <a href="./resume.pdf" class="btn">이력서 다운로드</a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h3>CONTACT</h3>
+                    <p id="name">강예은</p>
+                    <div class="material-icons">phone_iphone</div>
+                    <p>010-8028-2975</p>
+                    <div class="material-icons">mail</div>
+                    <p>kangyeaheun@gmail.com</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="615" height="279" viewBox="0 0 615 279">
+                        <text id="Thank_You" data-name="Thank You" transform="translate(6 156)" fill="#333"
+                            font-size="150" font-family="AdobeHandwriting-Ernie, Adobe Handwriting">
+                            <tspan x="0" y="0">Thank You</tspan>
+                        </text>
+                    </svg>
+
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <div class="footer"> &copy;2021 KangYeahEun All Right Reserved.  bulit by kangyeaheun</div>
+    </div>
+
+    <!-- main.js -->
+    <script src="script/main.js"></script>
+</body>
+
+</html>
